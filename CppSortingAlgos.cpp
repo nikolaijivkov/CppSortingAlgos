@@ -125,7 +125,7 @@ int main()
 
 	/* Sorting Algos O(n.logn): */
 	// quickSort(Arr, 0, n-1);        // O(n.logn) average, n=10000, msec = [28, 30, 27, 27, 26]
-	// mergeSort(Arr, n);             // O(n.logn) average, n=10000, msec = [10, 10, 9, 13, 9]
+	mergeSort(Arr, n);                // O(n.logn) average, n=10000, msec = [10, 10, 9, 13, 9]
 	
 	/* STD build in sort guaranteed O(n.logn): */
 	// std::sort(Arr, Arr+n);         // O(n.logn) average, n=10000, msec = [13, 10, 12, 9, 11]
