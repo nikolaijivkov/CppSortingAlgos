@@ -24,8 +24,8 @@ void swap(T &a, T &b) { // faster than std::swap for fundamental build in types
 }
 
 void fillRandArr(int Arr[], int n) {
-	std::random_device rd;
-	std::uniform_int_distribution<int> dist(1, 256);
+	static std::random_device rd;
+	static std::uniform_int_distribution<int> dist(1, 256);
 	for (int i = 0; i < n; ++i)
 		Arr[i] = dist(rd);
 }
@@ -171,7 +171,6 @@ int main()
 	//for (int i=0; i<n; ++i) std::cout << Arr[i] << std::endl;
 
 	delete[] Arr;
-	getchar();
 	return 0;
 }
 
